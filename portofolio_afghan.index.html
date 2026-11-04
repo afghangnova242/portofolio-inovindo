@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afghan Genova Sudrajat | Portofolio PPLG</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Gradient Text Custom Styling - Green Theme on Light */
+        .gradient-text {
+            background: linear-gradient(135deg, #15803d 0%, #16a34a 50%, #22c55e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-green-500 selection:text-white">
+
+    <!-- Navbar Sticky Header (White Glassmorphism) -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-emerald-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center gap-2 group">
+                <span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 to-green-500 flex items-center justify-center font-mono font-bold text-white text-lg group-hover:scale-105 transition-transform shadow-md shadow-emerald-500/20">
+                    AG
+                </span>
+                <span class="font-bold text-lg tracking-tight text-slate-900 group-hover:text-emerald-600 transition-colors">
+                    Afghan<span class="text-emerald-600">.dev</span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#home" class="text-slate-600 hover:text-emerald-600 transition-colors">Home</a>
+                <a href="#about" class="text-slate-600 hover:text-emerald-600 transition-colors">About</a>
+                <a href="#projects" class="text-slate-600 hover:text-emerald-600 transition-colors">Projects</a>
+                <a href="#contact" class="px-5 py-2 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold shadow-md shadow-emerald-600/20 hover:shadow-emerald-600/30 hover:scale-105 transition-all">
+                    Hubungi Saya
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-emerald-600 p-2 rounded-lg focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-emerald-100 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="#home" class="mobile-link block py-2 text-slate-700 hover:text-emerald-600 font-medium">Home</a>
+            <a href="#about" class="mobile-link block py-2 text-slate-700 hover:text-emerald-600 font-medium">About</a>
+            <a href="#projects" class="mobile-link block py-2 text-slate-700 hover:text-emerald-600 font-medium">Projects</a>
+            <a href="#contact" class="mobile-link block py-2.5 text-center rounded-xl bg-emerald-600 text-white font-bold hover:bg-emerald-700">Hubungi Saya</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO / HOME SECTION -->
+        <section id="home" class="min-h-screen pt-24 pb-16 flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-emerald-50/50 via-white to-slate-50">
+            <!-- Background Decorative Glows -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30rem] h-[30rem] bg-emerald-200/40 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-10 right-10 w-72 h-72 bg-green-200/30 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Content Text -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100/80 border border-emerald-200 text-xs font-mono font-semibold text-emerald-800">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            Siswa PPLG SMKN 1 Kawali
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-slate-900">
+                            Halo, Saya <br class="hidden sm:inline">
+                            <span class="gradient-text">Afghan Genova S.</span>
+                        </h1>
+
+                        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            Siswa jurusan <span class="text-slate-900 font-semibold">Pengembangan Perangkat Lunak dan Gim (PPLG)</span> di <span class="text-emerald-700 font-semibold">SMKN 1 Kawali</span>. Suka memecahkan masalah lewat baris kode dan bersemangat dalam dunia <span class="text-slate-900 font-semibold">Web Development & Gaming</span>.
+                        </p>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                            <a href="#projects" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold flex items-center gap-2 transition-all shadow-lg shadow-emerald-600/25 hover:shadow-emerald-600/40">
+                                <i class="fa-solid fa-code"></i> Lihat Project
+                            </a>
+                            <a href="#about" class="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 font-semibold flex items-center gap-2 transition-colors shadow-sm">
+                                <i class="fa-solid fa-user text-emerald-600"></i> Tentang Saya
+                            </a>
+                        </div>
+
+                        <!-- Mini Highlights -->
+                        <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-200 text-center lg:text-left">
+                            <div>
+                                <h3 class="text-2xl font-extrabold text-slate-900 font-mono">PPLG</h3>
+                                <p class="text-xs text-slate-500 font-medium">Jurusan Keahlian</p>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-extrabold text-emerald-600 font-mono">3+</h3>
+                                <p class="text-xs text-slate-500 font-medium">Project Selesai</p>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-extrabold text-emerald-700 font-mono">Futsal</h3>
+                                <p class="text-xs text-slate-500 font-medium">Hobi & Sport</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Visual Card / Mockup (Clean Light Style) -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative w-full max-w-md">
+                            <!-- Outer Card Frame -->
+                            <div class="relative bg-white border border-emerald-100 rounded-3xl p-6 shadow-xl shadow-emerald-950/5">
+                                <!-- Top Bar Code Window -->
+                                <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-5">
+                                    <div class="flex space-x-2">
+                                        <div class="w-3 h-3 rounded-full bg-rose-400"></div>
+                                        <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+                                        <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+                                    </div>
+                                    <span class="text-xs font-mono text-slate-400 font-medium">afghan-profile.json</span>
+                                </div>
+
+                                <!-- Avatar Image Profile -->
+                                <div class="flex justify-center mb-6">
+                                    <div class="relative group">
+                                        <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-green-400 rounded-full blur opacity-40 group-hover:opacity-75 transition duration-300"></div>
+                                        <img src="foto.jpeg" 
+                                             alt="Afghan Genova Sudrajat" 
+                                             class="relative w-36 h-36 rounded-full object-cover border-4 border-white bg-emerald-50 shadow-md"
+                                             onerror="this.src='https://placehold.co/200x200/dcfce7/16a34a?text=AGS'">
+                                    </div>
+                                </div>
+
+                                <!-- JSON Mockup code display -->
+                                <div class="font-mono text-xs sm:text-sm text-slate-700 space-y-1 bg-slate-900 text-slate-100 p-4 rounded-2xl shadow-inner">
+                                    <p><span class="text-emerald-400">const</span> <span class="text-green-300">developer</span> = {</p>
+                                    <p class="pl-4"><span class="text-emerald-400">name</span>: <span class="text-emerald-200">'Afghan Genova S.'</span>,</p>
+                                    <p class="pl-4"><span class="text-emerald-400">school</span>: <span class="text-emerald-200">'SMKN 1 Kawali'</span>,</p>
+                                    <p class="pl-4"><span class="text-emerald-400">major</span>: <span class="text-emerald-200">'PPLG'</span>,</p>
+                                    <p class="pl-4"><span class="text-emerald-400">hobby</span>: <span class="text-emerald-200">'Bermain Futsal ⚽'</span>,</p>
+                                    <p class="pl-4"><span class="text-emerald-400">status</span>: <span class="text-amber-300">'Ready to Code'</span></p>
+                                    <p>};</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-20 bg-white border-y border-emerald-100 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Header -->
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-mono text-emerald-700 tracking-wider uppercase font-bold">Profil Singkat</h2>
+                    <p class="text-3xl font-extrabold text-slate-900 mt-1">Tentang Saya</p>
+                    <div class="w-12 h-1 bg-emerald-500 mx-auto mt-3 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                    
+                    <!-- Bio Description Card -->
+                    <div class="lg:col-span-7 bg-emerald-50/40 border border-emerald-100 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-sm">
+                        <div class="space-y-4">
+                            <h3 class="text-2xl font-bold text-slate-900 flex items-center gap-3">
+                                <i class="fa-solid fa-graduation-cap text-emerald-600"></i> Siswa PPLG SMKN 1 Kawali
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                                Saya adalah siswa di <strong class="text-slate-900">SMKN 1 Kawali</strong> yang mengambil jurusan <strong class="text-emerald-700">Pengembangan Perangkat Lunak dan Gim (PPLG)</strong>. Saya memiliki ketertarikan tinggi dalam pembuatan aplikasi web modern, logika pemrograman, serta dasar-dasar pengembangan gim.
+                            </p>
+                            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                                Selain memfokuskan diri pada pemrograman, saya sangat menyukai hobi <strong class="text-slate-900">Bermain Futsal</strong>. Dari hobi ini, saya melatih kebugaran fisik, kecepatan berpikir di bawah tekanan, serta pentingnya komunikasi dan kerjasama tim.
+                            </p>
+                        </div>
+
+                        <!-- Futsal & Softskills Badge -->
+                        <div class="mt-8 pt-6 border-t border-emerald-200/60 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-white border border-emerald-100 shadow-sm">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-futbol"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900">Kerjasama Tim</h4>
+                                    <p class="text-xs text-slate-500">Keterampilan Hobi Futsal</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-white border border-emerald-100 shadow-sm">
+                                <div class="w-10 h-10 rounded-lg bg-green-100 text-green-700 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900">Disiplin & Fokus</h4>
+                                    <p class="text-xs text-slate-500">Strategi & Respon Cepat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Skills Stack Card -->
+                    <div class="lg:col-span-5 bg-white border border-emerald-100 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-sm">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                                <i class="fa-solid fa-laptop-code text-emerald-600"></i> Keahlian & Tech Stack
+                            </h3>
+
+                            <div class="space-y-4">
+                                <!-- HTML / CSS / JS -->
+                                <div>
+                                    <div class="flex justify-between text-xs font-mono mb-1">
+                                        <span class="text-slate-700 font-medium">HTML5 / CSS3 / JavaScript</span>
+                                        <span class="text-emerald-600 font-bold">85%</span>
+                                    </div>
+                                    <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                                        <div class="bg-gradient-to-r from-emerald-500 to-green-600 h-full rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+
+                                <!-- PHP & Laravel Basis -->
+                                <div>
+                                    <div class="flex justify-between text-xs font-mono mb-1">
+                                        <span class="text-slate-700 font-medium">PHP & Laravel Basics</span>
+                                        <span class="text-emerald-600 font-bold">75%</span>
+                                    </div>
+                                    <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                                        <div class="bg-emerald-600 h-full rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Database (MySQL) -->
+                                <div>
+                                    <div class="flex justify-between text-xs font-mono mb-1">
+                                        <span class="text-slate-700 font-medium">MySQL Database</span>
+                                        <span class="text-emerald-600 font-bold">70%</span>
+                                    </div>
+                                    <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                                        <div class="bg-emerald-500 h-full rounded-full" style="width: 70%"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Game Dev Basics -->
+                                <div>
+                                    <div class="flex justify-between text-xs font-mono mb-1">
+                                        <span class="text-slate-700 font-medium">Game Dev 2D (Construct/Phaser)</span>
+                                        <span class="text-green-600 font-bold">65%</span>
+                                    </div>
+                                    <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                                        <div class="bg-green-500 h-full rounded-full" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill Tags -->
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-lg bg-emerald-50 border border-emerald-200 text-xs font-mono font-semibold text-emerald-800">TailwindCSS</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-100 border border-slate-200 text-xs font-mono font-medium text-slate-700">Git / GitHub</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-100 border border-slate-200 text-xs font-mono font-medium text-slate-700">VS Code</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-100 border border-slate-200 text-xs font-mono font-medium text-slate-700">UI/UX Design</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="py-20 bg-slate-50 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Title -->
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-mono text-emerald-700 tracking-wider uppercase font-bold">Hasil Karya</h2>
+                    <p class="text-3xl font-extrabold text-slate-900 mt-1">Project PPLG Terpilih</p>
+                    <p class="text-slate-600 text-sm mt-2">Berikut adalah beberapa proyek yang telah saya kembangkan selama belajar di PPLG SMKN 1 Kawali.</p>
+                    <div class="w-12 h-1 bg-emerald-500 mx-auto mt-3 rounded-full"></div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Project Item 1 -->
+                    <div class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:border-emerald-300 transition-all duration-300 flex flex-col group hover:-translate-y-1">
+                        <div class="relative h-48 overflow-hidden bg-emerald-50">
+                            <img src="https://placehold.co/600x400/dcfce7/15803d?text=Sistem+Perpustakaan+Digital" 
+                                 alt="Sistem Manajemen Perpustakaan Sekolah" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x400/dcfce7/16a34a?text=Web+Perpustakaan'">
+                            <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur border border-emerald-200 text-xs font-mono font-semibold text-emerald-800 shadow-sm">
+                                Web App
+                            </span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                                    Sistem Perpustakaan Sekolah
+                                </h3>
+                                <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                                    Aplikasi berbasis web untuk pengolahan peminjaman buku, pendataan anggota, serta pencatatan stok perpustakaan sekolah secara real-time.
+                                </p>
+                            </div>
+
+                            <div>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-emerald-100 text-emerald-800 font-medium">PHP / Laravel</span>
+                                    <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-slate-100 text-slate-700">MySQL</span>
+                                    <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-slate-100 text-slate-700">Bootstrap</span>
+                                </div>
+                                <div class="flex items-center justify-between pt-3 border-t border-slate-100">
+                                    <a href="#contact" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
+                                        Detail Project <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                    </a>
+                                    <a href="#" onclick="alert('Demo project disimulasikan')" class="text-slate-400 hover:text-emerald-600 transition-colors">
+                                        <i class="fa-brands fa-github text-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Item 2 -->
+                    <div class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:border-emerald-300 transition-all duration-300 flex flex-col group hover:-translate-y-1">
+                        <div class="relative h-48 overflow-hidden bg-emerald-50">
+                            <img src="https://placehold.co/600x400/dcfce7/166534?text=Aplikasi+Kasir+Point+Of+Sale" 
+                                 alt="Aplikasi Kasir Inventaris" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x400/dcfce7/166534?text=App+Kasir+POS'">
+                            <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur border border-emerald-200 text-xs font-mono font-semibold text-emerald-800 shadow-sm">
+                                POS / Web
+                            </span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                                    Aplikasi Kasir & Inventaris
+                                </h3>
+                                <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                                    Sistem Point of Sale (POS) sederhana untuk pengelolaan transaksi kasir, cetak struk pembayaran, dan pemantauan stok barang toko.
+                                </p>
+                            </div>
+
+                            <div>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-emerald-100 text-emerald-800 font-medium">JavaScript</span>
+                                    <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-slate-100 text-slate-700">Tailwind CSS</span>
+                                    <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-slate-100 text-slate-700">LocalStorage</span>
+                                </div>
+                                <div class="flex items-center justify-between pt-3 border-t border-slate-100">
+                                    <a href="#contact" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
+                                        Detail Project <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                    </a>
+                                    <a href="#" onclick="alert('Demo project disimulasikan')" class="text-slate-400 hover:text-emerald-600 transition-colors">
+                                        <i class="fa-brands fa-github text-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Item 3 -->
+                    <div class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:border-emerald-300 transition-all duration-300 flex flex-col group hover:-translate-y-1">
+                        <div class="relative h-48 overflow-hidden bg-emerald-50">
+                            <img src="https://placehold.co/600x400/dcfce7/15803d?text=Game+Edukasi+Petualangan+2D" 
+                                 alt="Game Edukasi 2D" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x400/dcfce7/15803d?text=2D+Game+Dev'">
+                            <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur border border-emerald-200 text-xs font-mono font-semibold text-emerald-800 shadow-sm">
+                                Game 2D
+                            </span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                                    Game Edukasi 2D Platformer
+                                </h3>
+                                <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                                    Game interaktif 2D bertema kuis edukasi dan petualangan ringan. Dirancang untuk menguji kuis logika dasar pemrograman secara menyenangkan.
+                                </p>
+                            </div>
+
+                            <div>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-emerald-100 text-emerald-800 font-medium">HTML5 Canvas</span>
+                                    <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-slate-100 text-slate-700">Construct 3</span>
+                                    <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-slate-100 text-slate-700">Pixel Art</span>
+                                </div>
+                                <div class="flex items-center justify-between pt-3 border-t border-slate-100">
+                                    <a href="#contact" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
+                                        Detail Project <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                    </a>
+                                    <a href="#" onclick="alert('Demo project disimulasikan')" class="text-slate-400 hover:text-emerald-600 transition-colors">
+                                        <i class="fa-brands fa-github text-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-20 bg-white border-t border-emerald-100 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Left Contact Info -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <h2 class="text-xs font-mono text-emerald-700 tracking-wider uppercase font-bold">Kontak & Lokasi</h2>
+                            <h3 class="text-3xl font-extrabold text-slate-900 mt-1">Mari Terhubung</h3>
+                            <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                                Tertarik berkolaborasi atau sekadar berbincang tentang web development dan futsal? Jangan ragu untuk menghubungi saya!
+                            </p>
+                        </div>
+
+                        <!-- Info Cards -->
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-emerald-50/50 border border-emerald-100">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-lg shrink-0 mt-0.5 shadow-sm">
+                                    <i class="fa-solid fa-school"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-mono text-emerald-800 uppercase font-bold">Sekolah</h4>
+                                    <p class="text-sm font-bold text-slate-900">SMKN 1 Kawali</p>
+                                    <p class="text-xs text-slate-500">Jurusan PPLG (Pengembangan Perangkat Lunak & Gim)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-emerald-50/50 border border-emerald-100">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-lg shrink-0 mt-0.5 shadow-sm">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-mono text-emerald-800 uppercase font-bold">Lokasi</h4>
+                                    <p class="text-sm font-bold text-slate-900">Kawali, Ciamis</p>
+                                    <p class="text-xs text-slate-500">Jawa Barat, Indonesia</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-emerald-50/50 border border-emerald-100">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-lg shrink-0 mt-0.5 shadow-sm">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-mono text-emerald-800 uppercase font-bold">Email</h4>
+                                    <p class="text-sm font-bold text-slate-900">afghan.genova@smkn1kawali.sch.id</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="pt-4">
+                            <p class="text-xs font-mono text-slate-500 font-semibold mb-3">MEDIA SOSIAL</p>
+                            <div class="flex space-x-3">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="w-10 h-10 rounded-xl bg-slate-100 border border-slate-200 text-slate-700 hover:text-white hover:bg-emerald-600 hover:border-emerald-600 flex items-center justify-center transition-all shadow-sm">
+                                    <i class="fa-brands fa-github text-lg"></i>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile" class="w-10 h-10 rounded-xl bg-slate-100 border border-slate-200 text-slate-700 hover:text-white hover:bg-emerald-600 hover:border-emerald-600 flex items-center justify-center transition-all shadow-sm">
+                                    <i class="fa-brands fa-instagram text-lg"></i>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="w-10 h-10 rounded-xl bg-slate-100 border border-slate-200 text-slate-700 hover:text-white hover:bg-emerald-600 hover:border-emerald-600 flex items-center justify-center transition-all shadow-sm">
+                                    <i class="fa-brands fa-linkedin-in text-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Form Container -->
+                    <div class="lg:col-span-7 bg-white border border-emerald-100 rounded-3xl p-6 sm:p-8 relative shadow-lg shadow-emerald-950/5">
+                        <!-- Alert Box Dynamic -->
+                        <div id="form-alert" class="hidden mb-6 p-4 rounded-2xl text-sm font-semibold"></div>
+
+                        <form id="contact-form" class="space-y-5">
+                            <div>
+                                <label for="name" class="block text-xs font-mono font-bold text-slate-700 mb-2">NAMA LENGKAP</label>
+                                <input type="text" id="name" required placeholder="Masukkan nama Anda" 
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:bg-white focus:ring-2 focus:ring-emerald-600/20 transition-all">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-xs font-mono font-bold text-slate-700 mb-2">ALAMAT EMAIL</label>
+                                <input type="email" id="email" required placeholder="nama@email.com" 
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:bg-white focus:ring-2 focus:ring-emerald-600/20 transition-all">
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-xs font-mono font-bold text-slate-700 mb-2">PESAN</label>
+                                <textarea id="message" rows="4" required placeholder="Tuliskan pesan atau pertanyaan Anda di sini..." 
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:bg-white focus:ring-2 focus:ring-emerald-600/20 transition-all"></textarea>
+                            </div>
+
+                            <button type="submit" 
+                                class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm tracking-wide shadow-md shadow-emerald-600/20 hover:shadow-emerald-600/30 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Afghan Genova Sudrajat. SMKN 1 Kawali - PPLG.</p>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPT -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Contact Form Handling (Without alert)
+        const contactForm = document.getElementById('contact-form');
+        const formAlert = document.getElementById('form-alert');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+
+            // Show Custom Inline Success Message
+            formAlert.className = 'mb-6 p-4 rounded-2xl text-sm font-semibold bg-emerald-100 border border-emerald-300 text-emerald-900';
+            formAlert.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-700 mr-2"></i> Terima kasih <strong>${name}</strong>, pesan Anda berhasil dikirim! Saya akan segera merespon.`;
+            formAlert.classList.remove('hidden');
+
+            // Reset Form Fields
+            contactForm.reset();
+
+            // Auto Hide Alert Message after 5s
+            setTimeout(() => {
+                formAlert.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
